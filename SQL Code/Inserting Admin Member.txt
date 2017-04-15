@@ -1,0 +1,2 @@
+INSERT INTO Admin
+VALUES('A0001', 'password', '2', 'Mr. Darren Armstrong', 'armstrong-d2@email.ulster.ac.uk', '1990-06-27', 'A0001.jpg', '1');

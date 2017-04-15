@@ -1,0 +1,30 @@
+-- Inserting Computing as an area of study
+INSERT INTO Areaofstudy (area)
+VALUES('Computing');
+-- Inserting Mathematics as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Mathematics');
+-- Inserting History as an area of Study
+INSERT INTO areaofstudy (area)
+VALUES('History');
+-- Inserting English as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('English');
+-- Inserting Biology as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Biology');
+-- Inserting Chemistry as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Chemistry');
+-- Inserting Physics as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Physics');
+-- Inserting Art & Design as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Art & Design');
+-- Inserting Design & Technology as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Design & Technology');
+-- Inserting Engineering as an area of study
+INSERT INTO areaofstudy (area)
+VALUES('Engineering');

@@ -1,0 +1,15 @@
+-- Inserting Android Development as a Subject of Computing (1)
+INSERT INTO subject (name, Area_of_study)
+VALUES('Android Development', '1');
+-- Inserting HTML5 as a Subject of Computing (1)
+INSERT INTO subject (name, Area_of_study)
+VALUES('HTML5', '1');
+-- Inserting CSS3 as a Subject of Computing (1)
+INSERT INTO subject (name, Area_of_study)
+VALUES('CSS3', '1');
+-- Inserting PHP as a Subject of Computing (1)
+INSERT INTO subject (name, Area_of_study)
+VALUES('PHP Programming Language', '1');
+-- Inserting Java as a Subject of Computing (1)
+INSERT INTO subject (name, Area_of_study)
+VALUES('Java Programming Language', '1');

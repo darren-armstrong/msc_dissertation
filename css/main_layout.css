@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0px;
+	background-image: url('school.png');
+        background-repeat: repeat;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.deleteMsg{
+	margin-left:30px;
+}
+.onclick-menu {
+    position: relative;
+    display: inline-block;
+}
+iframe {
+	margin:0 auto;
+	display:block;
+}
+#displaySearchResult{
+	margin:5px;
+	clear:both;
+}
+#searchMsg{
+	display:none;
+	font-size:12px;
+	color:red;
+	font-weight:bold;
+}
+#sectionA{
+	display:block;
+}
+#sectionB{
+	display:none;
+}
+.searchMsg{
+	display:none;
+	width:auto;
+	font-size:12px;
+	color:red;
+	font-weight:bold;
+	float:left;
+}
+#subContent{
+	display:block;
+}
+button {	
+	cursor: hand;
+	cursor: pointer;	
+	background:#0084b4;
+	color:white;
+    	border-radius: 5px;
+}
+input[type=submit]{	
+	cursor: hand;
+	cursor: pointer;	
+	background:goldenRod;
+	color:white;
+    	border-radius: 5px;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom:5%;
+}
+h2 {
+	text-align: center;
+	text-decoration:underline;
+}
+p {
+	text-align: justify;
+    	line-height: 200%;
+	font-size: 20px;
+	padding-left:20px;
+	padding-right:20px;
+}
+a {
+	font-size:15px; 
+	color:#0084b4; 
+	text-decoration:none;
+	cursor: pointer; 
+	cursor: hand;
+}
+a:hover {
+	text-decoration: underline;
+}
+hr {
+	display: block; 
+	height: 1px;
+    	border: 0; 
+	width:100%;
+	border-top: 1px solid #0084b4;
+    	margin: 1em 0; 
+	padding: 0;
+}
+.tutorProfile {
+	width:25%;
+	max-width:250px;
+	margin:20px;
+	background-color:#0084b4;
+	text-align:center;
+	float: left;
+    	border-radius: 10px;
+    	box-shadow: 10px 10px 20px #888888;
+	border:2px solid #c0deed;
+	padding:1px;
+}
+.tutorProfile > .tutorPic {
+	width:50%;
+	margin: 0px auto;
+    	border-radius: 5px;
+}
+.tutorProfile > a {
+	text-decoration:none;
+	color:white;
+    	font-weight: bold;
+	cursor: pointer;
+	cursor: hand;
+}
+.tutorProfile > a:hover {
+	text-decoration:underline; 
+}	
+.selectedTutorial {
+	margin:0 auto;
+	width:60%;
+}
+.selectedTutorial > .likeViewBox {
+	text-align:right;
+	width:85%;
+}
+.selectedTutorial > hr {
+	display: block; 
+	height: 1px;
+    	border: 0;
+	width:85%;
+	border-top: 1px solid #0084b4;
+    	margin: 0 auto; 
+	padding: 0;
+}
+.selectedTutorial > p {
+	background-color:white;
+	border: 1px solid #0084b4;
+    	line-height: 150%;
+	font-size: 15px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#member {
+	width:50px;
+	height:50px; 
+	float:right;
+    	border-radius: 10px;
+	border: 1px solid #0084b4;
+	opacity:1;
+	top:1px;
+}
+#profilePicture {
+    	border-radius: 10px;
+	overflow:hidden;
+	width:100%;
+	height:50px;
+}
+#profilePicture > img {
+	width:100%;
+	opacity:1;
+}
+.tutDisplay {
+	width:25%;
+	max-width:250px;
+	margin:20px;
+	background-color:#0084b4;
+	text-align:center;
+	float: left;
+    	border-radius: 10px;
+    	box-shadow: 10px 10px 20px #888888;
+	border:2px solid #c0deed;
+	padding:2px;
+	overflow:auto;
+	cursor: hand;
+	cursor: pointer;
+}
+.tutDisplay > #tutImg {
+	width:90%;
+	margin:5px auto;
+}
+.tutDisplay > p {
+	background-image: url('crossword.png');
+        background-repeat: repeat;
+	margin:5px auto;	
+	width:80%;
+	line-height:150%;
+	font-size:15px;
+	text-align:center;
+}
+.header {
+	background:rgba(0,0,0,.5);//:#333333;
+	border:1px solid #c0deed;
+	width:100%;
+	min-width:960px;
+	position:fixed;
+	height:inherit;
+	top:0px;
+}
+.headerFooterContent {
+	width:70%;
+	min-width:960px;
+    	margin-left: auto;
+    	margin-right: auto;
+	color:white;
+	padding-top:1px;
+	padding-bottom:1px;	
+}
+.headerFooterContent > a {
+	text-decoration:none;
+	color:white;
+    	font-weight: bold;
+	cursor: hand;
+	cursor: pointer;
+}
+.levelOneAccess > a {
+	text-decoration:none;
+	color:white;
+    	font-weight: bold;
+	cursor: hand;
+	cursor: pointer;
+}
+.levelTwoAccess > a {
+	text-decoration:none;
+	color:white;
+    	font-weight: bold;
+	cursor: hand;
+	cursor: pointer;
+}
+.headerFooterContent > a:hover {
+	color:#0084b4; 
+}	
+.levelOneAccess > a:hover {
+	color:#0084b4; 
+}	
+.levelTwoAccess > a:hover {
+	color:#0084b4; 
+}	
+#menu > .headerFooterContent {
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.header > #menu {
+	width:100%;
+	min-width:960px;
+	background: black;
+  	transition-duration: 2.5s;
+  	transition-timing-function: ease-out;
+	height:inherit;
+	opacity:0.5;
+}
+.header:hover > #menu {
+	display:block;
+}
+.content {
+	background-image: url('crossword.png');
+        background-repeat: repeat;
+	width:70%;
+	min-width:960px;
+	min-height:500px;
+	overflow:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:1%;
+	padding-right:1%;
+	margin-top:7%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2%;
+    	border-radius: 10px;
+    	box-shadow: 10px 10px 20px #888888;
+}
+.footer {
+	background:#333333;
+    	opacity: 0.5;
+	border:1px solid #c0deed;
+	width:100%;
+	min-width:960px;
+	bottom:0px;
+}
+#logo {
+	width:10%;
+	min-width:150px; 
+	max-width:200px;
+	padding-top:1px;
+	align:left;
+	padding-bottom:1px;
+    	border-radius: 10px;
+	border: 1px solid black;
+}
+#searchBar {
+	float:left;
+    	border-radius: 10px;
+    	box-shadow: 10px 10px 20px #888888;
+	border:2px solid #c0deed;
+	padding:5px;
+	margin-left: 10px;
+	background-color:#0084b4;
+	width:25%;
+	margin-bottom:5px;
+}
+#searchBar > h1 {
+	font-size:10px;
+    	text-decoration: underline;
+	color:white;
+	margin-bottom:0px;
+}
+#sectionA > p {
+	font-size:11px;
+	color:white;
+	line-height:100%;
+	text-align:center;
+	padding:0px;
+}
+
+#sectionB > p {
+	font-size:11px;
+	color:white;
+	line-height:100%;
+	text-align:center;
+	padding:0px;
+}
+#searchBar > select {
+	width:95%;
+	margin-bottom:5px;
+}
+#welcomeText {
+    	width:70%;
+	float:right;
+	border-left:2px solid #c0deed;
+}
+.searchName {
+	width:90%;
+	font-size:12px;
+	padding-left:2px;
+	color:white;
+}
+.playMedia {
+	display: none;
+	width:90%;
+	opacity:0.8;
+	background-color:white;
+	margin:5px auto;
+}
+.tutDisplay:hover > .playMedia {
+	display:block;
+}
+
+#changeForename {
+	display:none;
+	width:auto;
+}
+#changeSurname {
+	display:none;
+	width:auto;	
+}
+#changeDoB {
+	display:none;
+	width:auto;	
+}
+#changeEmailAdd {
+	display:none;
+	width:auto;	
+}
+#changeUsername {
+	display:none;
+	width:auto;	
+}
+#changePicture {
+	display:none;
+	width:auto;	
+}
+#changePassword {
+	display:none;
+	width:auto;	
+}
+#changeSecAns {
+	display:none;
+	width:auto;	
+}
+#deleteAccount {
+	display:none;
+	width:auto;	
+}
+.hideInput {
+	display:none;
+	width:auto;
+}
+.CSSTableGenerator table{
+    	border-collapse: collapse;
+	float:right;
+        border-spacing: 0;
+	width:65%;
+	height:100%;
+	margin-right:20px;
+	padding:0px;
+}
+#viewTut{
+	width:90%;
+	float:left;
+	clear:both;
+	display:none;
+	width:auto;
+}
+.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;
+	border-top-left-radius:4px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;
+	border-top-right-radius:4px;
+}
+.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;
+	border-bottom-left-radius:4px;
+}
+.CSSTableGenerator tr:nth-child(odd){ 
+	background-color:#aad4ff; 
+}
+.CSSTableGenerator tr:nth-child(even){ 
+	background-color:#ffffff; 
+}
+.CSSTableGenerator td{
+	vertical-align:middle;	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:5px;
+	font-size:10px;
+	font-family:Comic Sans MS;
+	font-weight:normal;
+	color:#000000;
+}
+.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");
+	background: -o-linear-gradient(top,#005fbf,003f7f);
+	background-color:#005fbf;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:12px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");
+	background: -o-linear-gradient(top,#005fbf,003f7f);
+	background-color:#005fbf;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}

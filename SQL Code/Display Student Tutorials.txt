@@ -1,0 +1,7 @@
+--Display Tutorials Created By Students and that have been verified
+SELECT A.Tutorial_id, A.Title, A.Date_created, A.Likes, A.TutViews, B.name, C.fname, C.sname, D.area FROM tutorial AS A
+INNER JOIN subject AS B ON B.id = A.Subject
+INNER JOIN student AS C ON C.username = A.StudentCreator
+INNER JOIN areaofstudy AS D ON D.id = B.Area_of_study
+WHERE A.StudentCreator IS NOT NULL AND A.VerifyStatus IS NOT NULL
+ORDER BY A.Date_created ASC;

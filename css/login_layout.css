@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0px;
+	background-image: url('school.png');
+        background-repeat: repeat;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.content {
+	background-image: url('crossword.png');
+        background-repeat: repeat;
+	overflow:auto;
+	width:50%;
+	min-width:660px;
+	max-width:960px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:1%;
+	padding-right:1%;
+	margin-top:7%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2%;
+    	border-radius: 10px;
+    	box-shadow: 10px 10px 20px #888888;
+	border:2px solid black;
+}
+#errorMsg {
+	color:red;
+	height:inherit;
+	margin-bottom:2px;
+}
+.content > p {
+    	text-align: justify;
+    	text-justify: inter-word;	
+}
+#regContent {
+	width:70%;
+	margin-top:2%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2%;
+	text-align:justified;
+}
+#stageTwo {
+	width:auto;
+	display:none;
+}
+#stageThree {
+	width:auto;
+	display:none;
+}
+#stageFour {
+	width:auto;
+	display:none;
+}
+#showUser {
+	width:auto;
+	display:none;
+}
+.regBox {
+	width:50%;
+	margin:0px;
+}
+.searchMsg {
+	display:none;
+	width:auto;
+	font-size:9px;
+	color:red;
+}
+#loginform > #input_password {
+    	float:left;
+	min-width:200px;
+	width:20%;
+	height:inherit;
+}
+#loginform > #input_username {
+    	float:left;
+	min-width:200px;
+	width:20%;
+	height:inherit;
+}
+#loginform > #input_login {
+    	float:left;
+	min-width:75px;
+	width:10%;
+	overflow:auto;
+}
+input {
+	border-color:#0084b4;
+}
+#input_login > input {
+	background:#0084b4;
+	color:white;
+    	border-radius: 5px;
+}
+input[type="submit"]{
+	background:#0084b4;
+	color:white;
+    	border-radius: 5px;
+}
+a {
+	font-size:12px; 
+	color:#0084b4; 
+	text-decoration:none;
+	cursor: pointer; cursor: hand;
+}
+a:hover {
+	text-decoration: underline;
+}
+#logo {
+	width:10%;
+	min-width:150px; 
+	max-width:200px;
+	float: right;
+	padding-top:1px;
+	padding-bottom:1px;
+    	border-radius: 10px;
+	border: 1px solid black;
+}
+.button{
+	cursor: pointer; cursor: hand;
+	background:#0084b4;
+	color:white;
+    	border-radius: 5px;
+}

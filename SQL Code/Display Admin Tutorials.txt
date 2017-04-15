@@ -1,0 +1,7 @@
+-- Display Tutorials that have been created by the Administrators
+SELECT A.Tutorial_id, A.Title, A.Date_created, A.Likes, A.TutViews, A.VerifyStatus, B.name, C.name, D.area FROM tutorial AS A
+INNER JOIN subject AS B ON B.id = A.Subject
+INNER JOIN admin AS C ON C.username = A.AdminCreator
+INNER JOIN areaofstudy AS D ON D.id = B.Area_of_study
+WHERE A.AdminCreator IS NOT NULL
+ORDER BY A.Date_created ASC;

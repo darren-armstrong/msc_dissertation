@@ -1,0 +1,67 @@
+-- create Area of Study table
+CREATE TABLE AreaOfStudy
+(id int NOT NULL AUTO_INCREMENT,
+ area text, 
+ CONSTRAINT c6 PRIMARY KEY(id));
+ 
+-- create subject table
+CREATE TABLE Subject
+(id int NOT NULL AUTO_INCREMENT,
+ name text,
+ Area_of_study int,
+ CONSTRAINT c4 PRIMARY KEY(id),
+ CONSTRAINT c5 FOREIGN KEY(Area_of_study) REFERENCES AreaOfStudy(id));
+  
+-- create Admin table
+CREATE TABLE Admin
+(username varchar(60) NOT NULL,
+ p_word text,
+ admin_level int,
+ name text,
+ email varchar(254), -- Researched Max email address length
+ dob date,
+ image varchar(254),
+ area_of_study int, 
+ CONSTRAINT c7 PRIMARY KEY(username),
+ CONSTRAINT c8 FOREIGN KEY(area_of_study) REFERENCES AreaOfStudy(id));
+
+-- create Student table
+CREATE TABLE Student
+(username varchar(60) NOT NULL,
+ p_word text,
+ fname text,
+ sname text,
+ email varchar(254), -- Researched Max email address length
+ dob date,
+ image varchar(254),
+ securityOne text,
+ securityTwo text,
+ dateJoined timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Create a timestamp when row is created
+ CONSTRAINT c9 PRIMARY KEY(username));
+ 
+-- create tutorial table
+CREATE TABLE Tutorial
+(Tutorial_id int NOT NULL AUTO_INCREMENT,
+ Subject int,
+ Url varchar(2083), -- Researched Max URL length
+ Title varchar(60),
+ AdminCreator varchar(60),
+ StudentCreator varchar(60),
+ Description longText,
+ Date_created timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,  -- Create a timestamp when row is created
+ Likes BIGINT,
+ TutViews BIGINT, 
+ VerifyStatus int(1),
+ CONSTRAINT c1 PRIMARY KEY(Tutorial_id),
+ CONSTRAINT c2 FOREIGN KEY(Subject) REFERENCES Subject(id),
+ CONSTRAINT c3 FOREIGN KEY(AdminCreator) REFERENCES Admin(username),
+ CONSTRAINT c13 FOREIGN KEY(StudentCreator) REFERENCES Student(username));
+
+-- create Viewed table
+CREATE TABLE Viewed
+(Tutorial_id int NOT NULL,
+ username varchar(60) NOT NULL,
+ dateViewed timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Create a timestamp when row is created
+ CONSTRAINT c10 PRIMARY KEY(Tutorial_id, username, dateViewed),
+ CONSTRAINT c11 FOREIGN KEY(Tutorial_id) REFERENCES Tutorial(Tutorial_id),
+ CONSTRAINT c12 FOREIGN KEY(username) REFERENCES Student(username));
